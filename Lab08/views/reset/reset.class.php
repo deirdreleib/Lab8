@@ -19,13 +19,10 @@ class Reset extends View {
         <!--middle row-->
         <div class="middle-row">
             <form action="index.php?action=do_reset" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" value="<?= $_COOKIE['username'] ?? ''; ?>" readonly required>
+                <div><input type="text" id="username" name="username" value="<?= $_COOKIE['username'] ?? ''; ?>" readonly required></div>
+                <div><input type="password" name="password" style="width: 99%" required minlength="5" placeholder="Password, 5 characters minimum"></div>
 
-                <label for="password">New Password:</label>
-                <input type="password" id="password" name="password" required minlength="5">
-
-                <button type="submit">Reset Password</button>
+                <div><input type="submit" class="button" value="register"></div>
             </form>
         </div>
 

@@ -11,7 +11,6 @@ require_once ("vendor/autoload.php");
 
 //create an object of UserController
 $user_controller = new UserController();
-
 //add your code below this line to complete this file
 
 // Retrieve the 'action' query string parameter, defaulting to 'index' if not set
@@ -37,3 +36,5 @@ if (array_key_exists($action, $action_map)) {
     // Default to 'index' if the action is unrecognized
     $user_controller->index();
 }
+
+
