@@ -15,7 +15,7 @@ class UserModel {
         $this->dbConnection = $this->db->getConnection();
     }
     //Adding user method
-    public function add_user($username, $password, $email, $firstName, $lastName)
+    public function add_user($username, $password, $email, $firstName, $lastName): bool
     {
         //hashing the password
         $hashPassword = password_hash($password, PASSWORD_DEFAULT);

@@ -23,7 +23,7 @@ $action_map = [
     'login' => 'login',
     'verify' => 'verify',
     'logout' => 'logout',
-    'reset' => 'reset',
+    'reset' => 'Reset',
     'do_reset' => 'do_reset',
     'error' => 'error'
 ];

@@ -21,6 +21,7 @@ class Logout extends View {
         <div class="bottom-row">
             <span><a href="index.php?action=login">Login Again</a></span>
             <span><a href="index.php?action=index">Home</a></span>
+
         </div>
         <?php
         //calls the footer method in the parent class

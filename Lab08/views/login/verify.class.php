@@ -35,6 +35,8 @@ class Verify extends View {
             //this will display appropriate message based on the result
             if ($result): ?>
                 <span><a href="index.php?action=logout">Logout</a></span>
+                <span> Reset Password<a href="index.php?action=reset">Rest Password</a></span>
+
             <?php else: ?>
                 <span><a href="index.php?action=login">Try Again</a></span>
             <?php endif; ?>

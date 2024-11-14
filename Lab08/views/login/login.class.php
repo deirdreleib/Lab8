@@ -32,6 +32,7 @@ class Login extends View {
         <!--bottom row-->
         <div class="bottom-row">
             <span>Don't have an account? <a href="index.php?action=index">Register</a></span>
+
         </div>
 
         <?php

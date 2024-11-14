@@ -25,7 +25,15 @@ class UserController {
 
     // Register a new user
     public function register(): void {
-        $result = $this->user_model->add_user($_POST);
+        // Unpack $_POST into individual variables
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $email = $_POST['email'];
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+
+        // Call add_user with individual arguments
+        $result = $this->user_model->add_user($username, $password, $email, $firstName, $lastName);
 
         // Display registration confirmation
         $view = new Register();
@@ -45,7 +53,7 @@ class UserController {
 
         $result = $this->user_model->verify_user($username, $password);
 
-        $view = new VerifyUser();
+        $view = new Verify ();
         $view->display($result);
     }
 
@@ -58,7 +66,7 @@ class UserController {
     }
 
     // Display the password reset form
-    public function reset(): void {
+    public function Reset(): void {
         $view = new Reset();
         $view->display();
     }
